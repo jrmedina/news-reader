@@ -7,7 +7,6 @@ const fetchArticles = async (query) => {
     return json;
   } catch (error) {
     console.log(error);
-
     return error;
   }
 };
