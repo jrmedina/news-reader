@@ -20,8 +20,8 @@ const App = () => {
   ) : (
     <main>
       <h1>Times Reader</h1>
-      {/* <ArticleContainer articles={articles}/> */}
-      <DetailCard article={articles[3]} />
+      <ArticleContainer articles={articles}/>
+      {/* <DetailCard article={articles[3]} /> */}
     </main>
   );
 };
