@@ -2,11 +2,15 @@ import { fetchArticles } from "../../utils/apiCalls";
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import ArticleContainer from "../ArticleContainer/ArticleContainer";
-// import DetailCard from "../../DetailCard/DetailCard";
+import { Switch, Route } from "react-router-dom";
+import DetailCard from "../../DetailCard/DetailCard";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
+  // eslint-disable-next-line
   const [articles, setArticles] = useState([]);
+  // eslint-disable-next-line
+  const [article, setArticle] = useState({});
 
   useEffect(() => {
     setLoading(true);
@@ -15,13 +19,39 @@ const App = () => {
       setLoading(false);
     });
   }, []);
+
+  const findArticle = (id) => {
+    // eslint-disable-next-line
+    return articles.find((article, index) => {
+      if (index === parseInt(id)) {
+        setArticle(article);
+        return article;
+      }
+    });
+  };
+
   return loading ? (
-    <p>loading...</p>
+    <h3>loading...</h3>
   ) : (
     <main>
       <h1>Times Reader</h1>
-      <ArticleContainer articles={articles}/>
-      {/* <DetailCard article={articles[3]} /> */}
+      <Switch>
+        <Route
+          exact
+          path="/article/:index"
+          render={({ match }) => <DetailCard article={article} />}
+        />
+
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <ArticleContainer articles={articles} findArticle={findArticle} />
+          )}
+        />
+
+        {/* <DetailCard article={articles[3]} /> */}
+      </Switch>
     </main>
   );
 };
