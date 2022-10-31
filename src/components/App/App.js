@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import ArticleContainer from "../ArticleContainer/ArticleContainer";
 import { Switch, Route } from "react-router-dom";
 import DetailCard from "../../DetailCard/DetailCard";
+import SearchForm from "../SearchForm/SearchForm";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -14,7 +15,7 @@ const App = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetchArticles("home").then((res) => {
+    fetchArticles("world").then((res) => {
       setArticles(res.results);
       setLoading(false);
     });
@@ -35,6 +36,7 @@ const App = () => {
   ) : (
     <main>
       <h1>Times Reader</h1>
+      <SearchForm setArticles={setArticles} />
       <Switch>
         <Route
           exact
