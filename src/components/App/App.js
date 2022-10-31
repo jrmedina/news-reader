@@ -2,7 +2,7 @@ import { fetchArticles } from "../../utils/apiCalls";
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import ArticleContainer from "../ArticleContainer/ArticleContainer";
-import DetailCard from "../../DetailCard/DetailCard";
+// import DetailCard from "../../DetailCard/DetailCard";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
