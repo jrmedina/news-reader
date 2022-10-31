@@ -36,7 +36,7 @@ const App = () => {
   ) : (
     <main>
       <h1>Times Reader</h1>
-      <SearchForm setArticles={setArticles} />
+
       <Switch>
         <Route
           exact
@@ -48,7 +48,10 @@ const App = () => {
           exact
           path="/"
           render={() => (
-            <ArticleContainer articles={articles} findArticle={findArticle} />
+            <div>
+              <SearchForm setArticles={setArticles} />
+              <ArticleContainer articles={articles} findArticle={findArticle} />
+            </div>
           )}
         />
 

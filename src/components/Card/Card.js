@@ -6,7 +6,7 @@ const Card = ({image, title, index, findArticle}) => {
   return (
     <article className="article-card">
       <h3 className="title">{title}</h3>
-      <p>{index}</p>
+
       <Link to={`/article/${index}`}>
         <img
           className="card-img"
