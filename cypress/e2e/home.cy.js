@@ -21,6 +21,7 @@ describe("home page", () => {
   it("Should have a dropdown menu of categories", () => {
     cy.get("select").should("exist");
   });
+
   it("Should render a few top stories", () => {
     cy.get(".article-card").should("have.length", 3);
   });
@@ -35,5 +36,6 @@ describe("home page", () => {
       .find("img")
       .should("have.attr", "alt")
       .and("equal", "Sign Up for the Science Times Newsletter");
+     
   });
 });

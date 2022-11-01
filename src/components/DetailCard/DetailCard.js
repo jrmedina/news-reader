@@ -35,7 +35,7 @@ const DetailCard = ({ article }) => {
       <img
         className="detail-image"
         src={multimedia[0].url}
-        alt={multimedia[0].caption}
+        alt={multimedia[0].copyright}
       />
       <div className="facet">
         <p>{des_facet.join(", ")}</p>
