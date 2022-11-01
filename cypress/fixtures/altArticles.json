@@ -1,0 +1,114 @@
+{
+  "status": "OK",
+  "results": [
+    {
+      "section": "arts",
+      "subsection": "music",
+      "title": "Takeoff, of Atlanta Rap Trio Migos, Shot Dead at 28",
+      "abstract": "The rapper was killed in a shooting at a bowling alley in Houston overnight.",
+      "url": "https://www.nytimes.com/2022/11/01/arts/music/takeoff-migos-dead.html",
+      "uri": "nyt://article/99f1986f-032e-58e2-bad8-6ead27e5e89a",
+      "byline": "By Joe Coscarelli and J. David Goodman",
+      "item_type": "Article",
+      "updated_date": "2022-11-01T16:21:13-04:00",
+      "created_date": "2022-11-01T10:15:28-04:00",
+      "published_date": "2022-11-01T10:15:28-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Deaths (Fatalities)",
+        "Rap and Hip-Hop",
+        "Murders, Attempted Murders and Homicides",
+        "Content Type: Personal Profile"
+      ],
+      "org_facet": ["Migos (Music Group)"],
+      "per_facet": ["Takeoff (Rapper)", "Kirsnick Khari Ball"],
+      "geo_facet": ["Houston (Tex)"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2022/11/01/world/01xp-migo/merlin_195338484_48c92a1e-0964-4b52-9ba9-ca2e9bfbcf5b-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Takeoff during a Migos performance in Los Angeles last year. The rapper was fatally shot in Houston early Tuesday morning.",
+          "copyright": "Rich Fury/Getty Images For Global Citizen"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/11/01/world/01xp-migo/01xp-migo-threeByTwoSmallAt2X-v2.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Takeoff during a Migos performance in Los Angeles last year. The rapper was fatally shot in Houston early Tuesday morning.",
+          "copyright": "Rich Fury/Getty Images For Global Citizen"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/11/01/world/01xp-migo/01xp-migo-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Takeoff during a Migos performance in Los Angeles last year. The rapper was fatally shot in Houston early Tuesday morning.",
+          "copyright": "Rich Fury/Getty Images For Global Citizen"
+        }
+      ],
+      "short_url": "https://nyti.ms/3fiNrAM"
+    },
+    {
+      "section": "arts",
+      "subsection": "television",
+      "title": "Christina Applegate Pours One Out for ‘Dead to Me’",
+      "abstract": "Diagnosed with multiple sclerosis during filming of the show’s final season, Applegate was determined to finish the story. She said it was the hardest thing she’s ever done.",
+      "url": "https://www.nytimes.com/2022/11/01/arts/television/christina-applegate-dead-to-me.html",
+      "uri": "nyt://article/62d2d02c-5a93-54ed-98f6-8f3886a2511a",
+      "byline": "By Alexis Soloski",
+      "item_type": "Article",
+      "updated_date": "2022-11-01T12:10:21-04:00",
+      "created_date": "2022-11-01T10:00:06-04:00",
+      "published_date": "2022-11-01T10:00:06-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": ["Television", "Dead to Me (TV Program)"],
+      "org_facet": [],
+      "per_facet": ["Applegate, Christina"],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2022/11/02/arts/01applegate1/merlin_215788803_d47b9b0e-fc5d-44db-99c4-5e3ba999aa80-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Christina Applegate in the final season of “Dead to Me,” premiering Nov. 17 on Netflix. “This is the first time anyone’s going to see me the way I am,” she said.",
+          "copyright": "Saeed Adyani/Netflix"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/11/02/arts/01applegate1/merlin_215788803_d47b9b0e-fc5d-44db-99c4-5e3ba999aa80-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Christina Applegate in the final season of “Dead to Me,” premiering Nov. 17 on Netflix. “This is the first time anyone’s going to see me the way I am,” she said.",
+          "copyright": "Saeed Adyani/Netflix"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/11/02/arts/01applegate1/01applegate1-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Christina Applegate in the final season of “Dead to Me,” premiering Nov. 17 on Netflix. “This is the first time anyone’s going to see me the way I am,” she said.",
+          "copyright": "Saeed Adyani/Netflix"
+        }
+      ],
+      "short_url": "https://nyti.ms/3zyhYB8"
+    }
+  ]
+}
