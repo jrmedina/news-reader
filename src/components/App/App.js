@@ -5,28 +5,26 @@ import ArticleContainer from "../ArticleContainer/ArticleContainer";
 import { Switch, Route } from "react-router-dom";
 import DetailCard from "../DetailCard/DetailCard";
 import SearchForm from "../SearchForm/SearchForm";
+import loadingImg from "../../assets/loading.svg";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
-  // eslint-disable-next-line
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
+    getArticles("home");
+  }, []);
+
+  const getArticles = (term) => {
     setLoading(true);
-    fetchArticles("home").then((res) => {
+    fetchArticles(term).then((res) => {
       setArticles(res.results);
       setLoading(false);
     });
-  }, []);
-
-  const findArticle = (id) => {
-    // eslint-disable-next-line
-    return articles.find((article, index) => {
-      if (index === parseInt(id)) {
-        return article;
-      }
-    });
   };
+
+  const findArticle = (id) =>
+    articles.find((article, index) => index === parseInt(id));
 
   const searchArticles = (term) => {
     return articles.filter((article) =>
@@ -35,7 +33,7 @@ const App = () => {
   };
 
   return loading ? (
-    <h3>LOADING...</h3>
+    <img src={loadingImg} className="loading" alt="loading" />
   ) : (
     <main className="App">
       <Switch>
@@ -71,7 +69,7 @@ const App = () => {
           render={() => (
             <div>
               <h1>Times Reader ({articles[0] && articles[0].section})</h1>
-              <SearchForm setArticles={setArticles} />
+              <SearchForm getArticles={getArticles} />
               <ArticleContainer articles={articles} />
             </div>
           )}
