@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import queryTerms from "../../utils/queryTerms"
+import queryTerms from "../../utils/queryTerms";
 import { fetchArticles } from "../../utils/apiCalls";
+import "./SearchForm.css";
+import { Link } from "react-router-dom";
 
 const SearchForm = ({ setArticles }) => {
   const [term, setTerm] = useState("");
@@ -13,28 +15,34 @@ const SearchForm = ({ setArticles }) => {
     );
   });
 
-  const handleChange = (e) => {
-    setTerm(e.target.value);
-    console.log(e.target.value);
-    
-fetchArticles(e.target.value).then((res) => {
-setArticles(res.results);
-});
-
+  const handleSelect = (e) => {
+    fetchArticles(e.target.value).then((res) => {
+      setArticles(res.results);
+    });
   };
 
   return (
-    <form className="dropdown-container">
-      <select onChange={(e) => handleChange(e)} value={term}>
+    <form className="form">
+      <select
+        onChange={(e) => handleSelect(e)}
+        value={term}
+        className="dropdown"
+      >
         <option value="" disabled>
           Select Your Articles
         </option>
         {queryOptions}
       </select>
-
-      {/* <Link to={`/results`} onClick={handleClick}>
-        <button className="choose-mood-button">Play Your Mood</button>
-      </Link> */}
+      <input
+        type="text"
+        placeholder="search current articles"
+        className="search"
+        value={term}
+        onChange={(e) => setTerm(e.target.value)}
+      />
+      <Link to={`/search/${term}`}>
+        <button>Search</button>
+      </Link>
     </form>
   );
 };
