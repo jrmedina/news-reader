@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "../Card/Card";
 import "./ArticleContainer.css";
-import { Link } from "react-router-dom";
 import nytimes from "../../assets/NYTimes.png";
 
 const ArticleContainer = ({ articles }) => {
