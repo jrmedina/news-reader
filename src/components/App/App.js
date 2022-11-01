@@ -23,14 +23,8 @@ const App = () => {
     });
   };
 
-  const findArticle = (id) => {
-    // eslint-disable-next-line
-    return articles.find((article, index) => {
-      if (index === parseInt(id)) {
-        return article;
-      }
-    });
-  };
+  const findArticle = (id) =>
+    articles.find((article, index) => index === parseInt(id));
 
   const searchArticles = (term) => {
     return articles.filter((article) =>

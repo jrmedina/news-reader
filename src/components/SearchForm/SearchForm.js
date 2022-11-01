@@ -15,8 +15,6 @@ const SearchForm = ({ getArticles }) => {
     );
   });
 
-  
-
   const handleInput = (e) => {
     setTerm(e.target.value);
     e.target.value ? setLock(false) : setLock(true);

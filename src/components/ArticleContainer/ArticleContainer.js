@@ -3,7 +3,6 @@ import Card from "../Card/Card";
 import "./ArticleContainer.css";
 import { Link } from "react-router-dom";
 
-
 const ArticleContainer = ({ articles }) => {
   const display = articles.length ? (
     articles.map((article, index) => {
@@ -23,8 +22,6 @@ const ArticleContainer = ({ articles }) => {
       </Link>
     </div>
   );
-
-
 
   return <div className="article-container">{display}</div>;
 };

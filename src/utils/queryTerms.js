@@ -27,4 +27,4 @@ const terms = [
   "world",
 ];
 
-export default terms
+export default terms;
