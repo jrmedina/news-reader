@@ -1,6 +1,7 @@
 const fetchArticles = async (query) => {
   try {
     const response = await fetch(
+      //enter your api key here
       `https://api.nytimes.com/svc/topstories/v2/${query}.json?api-key=jEnxtMxPoFUzWywbiJSS5nHch0AOHqlP`
     );
     const json = await response.json();
