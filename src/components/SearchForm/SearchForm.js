@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 const SearchForm = ({ setArticles }) => {
   const [term, setTerm] = useState("");
+  const [lock, setLock] = useState(true);
 
   const queryOptions = queryTerms.map((q, index) => {
     return (
@@ -19,6 +20,11 @@ const SearchForm = ({ setArticles }) => {
     fetchArticles(e.target.value).then((res) => {
       setArticles(res.results);
     });
+  };
+
+  const handleInput = (e) => {
+    setTerm(e.target.value);
+    e.target.value ? setLock(false) : setLock(true);
   };
 
   return (
@@ -38,10 +44,10 @@ const SearchForm = ({ setArticles }) => {
         placeholder="search current articles"
         className="search"
         value={term}
-        onChange={(e) => setTerm(e.target.value)}
+        onChange={(e) => handleInput(e)}
       />
       <Link to={`/search/${term}`}>
-        <button>Search</button>
+        <button disabled={lock}>Search</button>
       </Link>
     </form>
   );
