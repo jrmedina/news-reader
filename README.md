@@ -3,7 +3,7 @@
 <h1>New York Times News Reader</h1>
 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
 
-[Deployed Application](https://concert-crew.herokuapp.com/)
+[Deployed Application](https://news-reader.vercel.app/)
 <br>
 ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
 
@@ -22,6 +22,7 @@
   - [Project Specs](#project-specs)
 
 ## Introduction
+
   - This application was built in an 8 hour time block, the goal was to, at a minimum:
     - Show a list of articles
     - Show a “detailed” view for each article (as opposed to summary/list view)
@@ -29,6 +30,7 @@
     - Implement some sort of search, filter, OR sort
 
 ## Technologies
+
   - React
   - Router
   - Cypress
@@ -39,6 +41,7 @@
   - Vercel
 
 ## Features
+
 - Users can see a list of NY Times selected articles
 - Users can query different articles based on popular topics
 - Users can search for articles based on keywords
@@ -46,6 +49,7 @@
 - Users can follow a provided link to NY Times published article
 
 ## Possible Future Extensions
+
 - Search for articles based on location
 - Alphabetize articles
 - Add articles to a "Read Later" section
@@ -65,20 +69,24 @@
 10. A live server should now be available at `http://localhost:3000/`
 
 ## Organizational Resources
-- [github project board](https://github.com/users/jrmedina/projects/3)
-- [planning](https://www.figma.com/file/RHQl0rwfdtx0P369CYXl2c/reader-tree?node-id=0%3A1)
+
+- [Github Project Board](https://github.com/users/jrmedina/projects/3)
+- [Planning](https://www.figma.com/file/RHQl0rwfdtx0P369CYXl2c/reader-tree?node-id=0%3A1)
 
 ## Sources
+
   - [MDN](http://developer.mozilla.org/en-US/)
   - [W3Schools](https://www.w3schools.com/)
   - [CSS-TRICKS](https://css-tricks.com/)
   - [Cypress Docs](https://www.cypress.io/)
 
 ## Contributor(s)
+
 - Joshua Medina
   - [Github](https://github.com/jrmedina)
   - [LinkedIn](https://www.linkedin.com/in/joshua-medina/)
   - [Portfolio](https://portfolio-jrmedina.vercel.app/)
 
 ## Project Specs
+
 - [Turing - NY Times News Reader](https://mod4.turing.edu/projects/take_home/take_home_fe)
