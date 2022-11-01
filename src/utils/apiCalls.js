@@ -6,6 +6,8 @@ const fetchArticles = async (query) => {
     );
     const json = await response.json();
     if (json.status === "OK") {
+      console.log(json);
+      
       return json;
     } else {
       throw Error;

@@ -18,6 +18,7 @@ const App = () => {
   const getArticles = (term) => {
     setLoading(true);
     fetchArticles(term).then((res) => {
+ 
       setArticles(res.results);
       setLoading(false);
     });
@@ -28,7 +29,7 @@ const App = () => {
 
   const searchArticles = (term) => {
     return articles.filter((article) =>
-      article.title.toLowerCase().includes(term)
+      article.title.toLowerCase().includes(term.toLowerCase())
     );
   };
 
