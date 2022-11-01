@@ -18,7 +18,6 @@ const App = () => {
   const getArticles = (term) => {
     setLoading(true);
     fetchArticles(term).then((res) => {
- 
       setArticles(res.results);
       setLoading(false);
     });
@@ -32,6 +31,8 @@ const App = () => {
       article.title.toLowerCase().includes(term.toLowerCase())
     );
   };
+
+
 
   return loading ? (
     <img src={loadingImg} className="loading" alt="loading" />
@@ -70,7 +71,7 @@ const App = () => {
           render={() => (
             <div>
               <h1>Times Reader ({articles[0] && articles[0].section})</h1>
-              <SearchForm getArticles={getArticles} />
+              <SearchForm getArticles={getArticles}  />
               <ArticleContainer articles={articles} />
             </div>
           )}
