@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import nytimes from "../../assets/NYTimes.png";
 
 const ArticleContainer = ({ articles }) => {
-  
   const alphabetize = (art) => {
     return art.sort((a, b) =>
       a.section > b.section ? 1 : b.section > a.section ? -1 : 0
@@ -29,9 +28,6 @@ const ArticleContainer = ({ articles }) => {
   ) : (
     <div>
       <p>Let's try again...</p>
-      <Link to={"/"}>
-        <button>GO BACK</button>
-      </Link>
     </div>
   );
 
