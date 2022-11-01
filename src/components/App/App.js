@@ -3,19 +3,17 @@ import "./App.css";
 import React, { useEffect, useState } from "react";
 import ArticleContainer from "../ArticleContainer/ArticleContainer";
 import { Switch, Route } from "react-router-dom";
-import DetailCard from "../../DetailCard/DetailCard";
+import DetailCard from "../DetailCard/DetailCard";
 import SearchForm from "../SearchForm/SearchForm";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
   // eslint-disable-next-line
   const [articles, setArticles] = useState([]);
-  // eslint-disable-next-line
-  const [article, setArticle] = useState({});
 
   useEffect(() => {
     setLoading(true);
-    fetchArticles("world").then((res) => {
+    fetchArticles("home").then((res) => {
       setArticles(res.results);
       setLoading(false);
     });
@@ -25,23 +23,46 @@ const App = () => {
     // eslint-disable-next-line
     return articles.find((article, index) => {
       if (index === parseInt(id)) {
-        setArticle(article);
         return article;
       }
     });
   };
 
-  return loading ? (
-    <h3>loading...</h3>
-  ) : (
-    <main>
-      <h1>Times Reader</h1>
+  const searchArticles = (term) => {
+    return articles.filter((article) =>
+      article.title.toLowerCase().includes(term)
+    );
+  };
 
+  return loading ? (
+    <h3>LOADING...</h3>
+  ) : (
+    <main className="App">
       <Switch>
         <Route
           exact
           path="/article/:index"
-          render={({ match }) => <DetailCard article={article} />}
+          render={({ match }) => {
+            return (
+              <DetailCard article={findArticle(parseInt(match.params.index))} />
+            );
+          }}
+        />
+
+        <Route
+          exact
+          path="/search/:term"
+          render={({ match }) => {
+            return (
+              <div>
+                <h3>Search results for: "{match.params.term}"</h3>
+                <ArticleContainer
+                  articles={searchArticles(match.params.term)}
+                  findArticle={findArticle}
+                />
+              </div>
+            );
+          }}
         />
 
         <Route
@@ -49,13 +70,12 @@ const App = () => {
           path="/"
           render={() => (
             <div>
+              <h1>Times Reader ({articles[0] && articles[0].section})</h1>
               <SearchForm setArticles={setArticles} />
-              <ArticleContainer articles={articles} findArticle={findArticle} />
+              <ArticleContainer articles={articles} />
             </div>
           )}
         />
-
-        {/* <DetailCard article={articles[3]} /> */}
       </Switch>
     </main>
   );

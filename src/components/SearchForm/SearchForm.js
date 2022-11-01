@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import queryTerms from "../../utils/queryTerms"
+import queryTerms from "../../utils/queryTerms";
 import { fetchArticles } from "../../utils/apiCalls";
+import "./SearchForm.css";
+import { Link } from "react-router-dom";
 
 const SearchForm = ({ setArticles }) => {
   const [term, setTerm] = useState("");
+  const [lock, setLock] = useState(true);
 
   const queryOptions = queryTerms.map((q, index) => {
     return (
@@ -13,28 +16,39 @@ const SearchForm = ({ setArticles }) => {
     );
   });
 
-  const handleChange = (e) => {
-    setTerm(e.target.value);
-    console.log(e.target.value);
-    
-fetchArticles(e.target.value).then((res) => {
-setArticles(res.results);
-});
+  const handleSelect = (e) => {
+    fetchArticles(e.target.value).then((res) => {
+      setArticles(res.results);
+    });
+  };
 
+  const handleInput = (e) => {
+    setTerm(e.target.value);
+    e.target.value ? setLock(false) : setLock(true);
   };
 
   return (
-    <form className="dropdown-container">
-      <select onChange={(e) => handleChange(e)} value={term}>
+    <form className="form">
+      <select
+        onChange={(e) => handleSelect(e)}
+        value={term}
+        className="dropdown"
+      >
         <option value="" disabled>
           Select Your Articles
         </option>
         {queryOptions}
       </select>
-
-      {/* <Link to={`/results`} onClick={handleClick}>
-        <button className="choose-mood-button">Play Your Mood</button>
-      </Link> */}
+      <input
+        type="text"
+        placeholder="search current articles"
+        className="search"
+        value={term}
+        onChange={(e) => handleInput(e)}
+      />
+      <Link to={`/search/${term}`}>
+        <button disabled={lock}>Search</button>
+      </Link>
     </form>
   );
 };

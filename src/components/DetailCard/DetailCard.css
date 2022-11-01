@@ -1,0 +1,33 @@
+.detail-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-title {
+  text-decoration: underline;
+  margin: 0%;
+  margin-top: 1%;
+}
+
+.by {
+  margin: 0%;
+  margin-top: 1%;
+}
+
+.detail-image {
+  width: 60%;
+  height: 40em;
+  border: 3px solid;
+}
+
+.abstract {
+  width: 60%;
+}
+
+.detail-card button {
+  margin-top: 2em;
+  cursor: pointer;
+}
+
