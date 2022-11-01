@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "./DetailCard.css";
 
 const DetailCard = ({ article }) => {
+  console.log(article);
+  
   const {
     title,
     abstract,
@@ -35,8 +37,10 @@ const DetailCard = ({ article }) => {
         src={multimedia[0].url}
         alt={multimedia[0].caption}
       />
-      <p>{des_facet.join(", ")}</p>
-      <p>{geo_facet.join(", ")}</p>
+      <div className="facet">
+        <p>{des_facet.join(", ")}</p>
+        <p>{geo_facet.join(", ")}</p>
+      </div>
       <div className="dates">
         <p>
           DATES:

@@ -2,14 +2,13 @@ import React from "react";
 import Card from "../Card/Card";
 import "./ArticleContainer.css";
 import { Link } from "react-router-dom";
+import nytimes from "../../assets/NYTimes.png";
 
 const ArticleContainer = ({ articles }) => {
   const display = articles.length ? (
     articles.map((article, index) => {
       let img =
-        article.multimedia !== null
-          ? article.multimedia[0].url
-          : `https://www.ahrcnyc.org/wp-content/uploads/2020/04/NY-Times.png`;
+        article.multimedia !== null ? article.multimedia[0].url : nytimes;
       return (
         <Card title={article.title} image={img} index={index} key={index} />
       );
