@@ -2,7 +2,7 @@ import { fetchArticles } from "../../utils/apiCalls";
 import "./App.css";
 import React, { useEffect, useState } from "react";
 import ArticleContainer from "../ArticleContainer/ArticleContainer";
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Link } from "react-router-dom";
 import DetailCard from "../DetailCard/DetailCard";
 import SearchForm from "../SearchForm/SearchForm";
 import loadingImg from "../../assets/loading.svg";
@@ -18,7 +18,6 @@ const App = () => {
   const getArticles = (term) => {
     setLoading(true);
     fetchArticles(term).then((res) => {
- 
       setArticles(res.results);
       setLoading(false);
     });
@@ -54,6 +53,9 @@ const App = () => {
           render={({ match }) => {
             return (
               <div>
+                <Link to={"/"}>
+                  <button className="back">GO BACK</button>
+                </Link>
                 <h3>Search results for: "{match.params.term}"</h3>
                 <ArticleContainer
                   articles={searchArticles(match.params.term)}
