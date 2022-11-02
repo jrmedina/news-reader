@@ -57,6 +57,7 @@
 ## Walkthrough
 
 <img width="450" height="300" src="https://media.giphy.com/media/Pk0S9wTjQqkwR5koUS/giphy.gif"/>
+
 <img width="150" height="300"src="https://media.giphy.com/media/dyWeeUxho796SzUKmM/giphy.gif"/>
 
 ## Set Up
