@@ -94,7 +94,8 @@ To view or add tests:
 - [Github Project Board](https://github.com/users/jrmedina/projects/3)
 - [Planning](https://www.figma.com/file/RHQl0rwfdtx0P369CYXl2c/reader-tree?node-id=0%3A1)
 
-<img src="https://user-images.githubusercontent.com/102757890/199547690-65f988e0-1b75-4373-a8cd-d6056b5b5e1c.png" width=600px/>
+<img src="https://user-images.githubusercontent.com/102757890/199547690-65f988e0-1b75-4373-a8cd-d6056b5b5e1c.png" width="350" height="300"/>
+<img src="https://user-images.githubusercontent.com/102757890/199562974-417d28e3-1b9c-4c6c-a121-1a926e4615e1.png" width="600" height="300"/>
 
 ## Sources
 
