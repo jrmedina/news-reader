@@ -1,5 +1,5 @@
 .hero {
-  border-bottom: 3px  black dotted;
+  border-bottom: 3px black dotted;
 }
 
 .hero-img {
@@ -33,7 +33,7 @@
     rgba(255, 255, 255, 0.458) 0px 0.125em 0.5em,
     rgba(255, 255, 255, 0.226) 0px 0px 0px 1px inset;
   width: 55%;
-  height: 30.5em;
+  height: 32em;
 }
 
 .slide.active:hover {
@@ -94,9 +94,9 @@
     box-shadow: rgba(240, 238, 238, 0.963) 0px 0.0625em 0.0625em,
       rgba(255, 255, 255, 0.458) 0px 0.125em 0.5em,
       rgba(255, 255, 255, 0.226) 0px 0px 0px 1px inset;
-    width: 70%;
-    height: 25em;
-        margin-bottom: 5%;
+    width: 73%;
+    height: 23.5em;
+    margin-bottom: 5%;
   }
 
   .hero-img {
@@ -115,9 +115,11 @@
   }
 
   .top-stories {
-  font-size: x-large;
-  letter-spacing: 0.1em;
-  margin-top: 0.4%;
-  margin-bottom: 2%;
-}
+    font-size: x-large;
+    letter-spacing: 0.1em;
+    margin-top: 0.4%;
+    margin-bottom: 2%;
+  }
+
+
 }

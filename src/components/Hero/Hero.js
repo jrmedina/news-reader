@@ -3,37 +3,12 @@ import "./Hero.css";
 import { IoMdArrowRoundBack, IoMdArrowRoundForward } from "react-icons/io";
 
 const Hero = ({ articles }) => {
-  // const topArticles = articles.map((article, index) => {
-  const [slide, setSlide] = useState(0);
 
-  //   return (
-  //     <div className={index === slide ? "slide active" : "slide"}>
-  //       {index === slide && (
-  //         <>
-  //           <p className="section">{article.section}</p>
-  //           <img
-  //             className="hero-img"
-  //             src={article.image.url}
-  //             alt={article.title}
-  //             id={index}
-  //           />
-  //           <h4 className="title">{article.title}</h4>
-  //           <p>{article.byline}</p>
-  //         </>
-  //       )}
-  //     </div>
-  //   );
-  // });
-  // return (
-  //   <>
-  //     <h2 className="top-stories">TODAY'S TOP STORIES</h2>
-  //     <div className="Hero">{topArticles}</div>
-  //   </>
-  // );
+  const [slide, setSlide] = useState(0);
 
   const toBeDisplayed = articles.map((article, index) => {
     return (
-      <div className={index === slide ? "slide active" : "slide "} key={index}>
+      <div className={index === slide ? "slide active" : "slide"} key={index}>
         {index === slide && (
           <>
             <p className="section">{article.section}</p>
@@ -44,7 +19,7 @@ const Hero = ({ articles }) => {
               id={index}
             />
             <h4 className="title">{article.title}</h4>
-            <p>{article.byline}</p>
+            <p className="by">{article.byline}</p>
           </>
         )}
       </div>
