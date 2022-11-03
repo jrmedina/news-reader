@@ -6,7 +6,8 @@ import { Switch, Route, Link } from "react-router-dom";
 import DetailCard from "../DetailCard/DetailCard";
 import SearchForm from "../SearchForm/SearchForm";
 import loadingImg from "../../assets/loading.svg";
-import Error from "../Error/Error"
+import Error from "../Error/Error";
+import Hero from "../Hero/Hero";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -19,7 +20,7 @@ const App = () => {
   const getArticles = (term) => {
     setLoading(true);
     fetchArticles(term).then((res) => {
-      setArticles(res.results);
+      setArticles(res);
       setLoading(false);
     });
   };
@@ -74,6 +75,7 @@ const App = () => {
             <div>
               <h1>Times Reader ({articles[0] && articles[0].section})</h1>
               <SearchForm getArticles={getArticles} />
+              <Hero articles={articles.splice(0,3)}/>
               <ArticleContainer articles={articles} />
             </div>
           )}

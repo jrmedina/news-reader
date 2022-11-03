@@ -1,3 +1,5 @@
+import cleanData from "./cleanData";
+
 const fetchArticles = async (query) => {
   try {
     const response = await fetch(
@@ -6,13 +8,12 @@ const fetchArticles = async (query) => {
     );
     const json = await response.json();
     if (json.status === "OK") {
-      return json;
+      return json.results.map((art) => cleanData(art));
     } else {
       throw Error;
     }
   } catch (error) {
     console.log(error);
-    return error;
   }
 };
 

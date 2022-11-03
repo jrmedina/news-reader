@@ -30,6 +30,6 @@ describe("query", () => {
     cy.get(".article-card")
       .first()
       .find("h5")
-      .should("contain", "Takeoff, of Atlanta Rap Trio Migos, Shot Dead at 28");
+      .should("contain", "Christina Applegate Pours One Out for ‘Dead to Me’");
   });
 });
