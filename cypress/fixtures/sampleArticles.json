@@ -173,6 +173,180 @@
         }
       ],
       "short_url": "https://nyti.ms/3SLTZWd"
+    },
+    {
+      "section": "science",
+      "subsection": "",
+      "title": "Sign Up for the Science Times Newsletter",
+      "abstract": "Every week, we’ll bring you stories that capture the wonders of the human body, nature and the cosmos.",
+      "url": "null",
+      "uri": "nyt://embeddedinteractive/daba9d03-29b8-5cfc-8cbd-74b8abf54a07",
+      "byline": "",
+      "item_type": "EmbeddedInteractive",
+      "updated_date": "2018-04-07T13:23:25-04:00",
+      "created_date": "2016-02-05T18:18:53-05:00",
+      "published_date": "2016-02-05T18:18:53-05:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [],
+      "org_facet": [],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2016/02/06/science/sciencenewsletter2/sciencenewsletter2-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1534,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "NASA, via Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2016/02/06/science/sciencenewsletter2/sciencenewsletter2-mediumThreeByTwo440.jpg",
+          "format": "mediumThreeByTwo440",
+          "height": 293,
+          "width": 440,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "NASA, via Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2016/02/06/science/sciencenewsletter2/sciencenewsletter2-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "",
+          "copyright": "NASA, via Associated Press"
+        }
+      ],
+      "short_url": "https://portfolio-jrmedina.vercel.app/"
+    },
+    {
+      "section": "travel",
+      "subsection": "",
+      "title": "Many States Omit Climate Education. These Teachers Are Trying to Slip It In.",
+      "abstract": "Around the United States, middle school science standards have minimal references to climate change and teachers on average spend just a few hours a year teaching it.",
+      "url": "https://www.nytimes.com/2022/11/01/climate/middle-school-education-climate-change.html",
+      "uri": "nyt://article/c3ff9c4e-cab8-5ccb-9464-a9c85b8f3120",
+      "byline": "By Winston Choi-Schagrin",
+      "item_type": "Article",
+      "updated_date": "2022-11-01T14:19:11-04:00",
+      "created_date": "2022-11-01T06:04:36-04:00",
+      "published_date": "2022-11-01T06:04:36-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Global Warming",
+        "Greenhouse Gas Emissions",
+        "Education (K-12)",
+        "Teenagers and Adolescence",
+        "Science and Technology"
+      ],
+      "org_facet": ["National Center for Science Education"],
+      "per_facet": [],
+      "geo_facet": [],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2022/10/28/science/00CLI-EDUCATION-01/merlin_215582184_ffbc4b30-3423-4940-b45e-78abce34b4fd-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1365,
+          "width": 2048,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Bertha Vazquez teaches 7th grade science in Miami.",
+          "copyright": "Eva Marie Uzcategui for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/10/28/science/00CLI-EDUCATION-01/00CLI-EDUCATION-01-threeByTwoSmallAt2X-v3.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Bertha Vazquez teaches 7th grade science in Miami.",
+          "copyright": "Eva Marie Uzcategui for The New York Times"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/10/28/science/00CLI-EDUCATION-01/merlin_215582184_ffbc4b30-3423-4940-b45e-78abce34b4fd-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Bertha Vazquez teaches 7th grade science in Miami.",
+          "copyright": "Eva Marie Uzcategui for The New York Times"
+        }
+      ],
+      "short_url": "https://nyti.ms/3fj9PKh"
+    },
+    {
+      "section": "us",
+      "subsection": "",
+      "title": "Aging Infrastructure May Create Higher Flood Risk in L.A., Study Finds",
+      "abstract": "Between 197,000 and 874,000 city residents could experience a foot of flooding during an extreme storm, scientists found. Most of them don’t live in beachfront mansions.",
+      "url": "https://www.nytimes.com/2022/10/31/climate/los-angeles-flood-risk.html",
+      "uri": "nyt://article/bab28bb5-3209-5d48-a0e4-b3310ab799d5",
+      "byline": "By Raymond Zhong",
+      "item_type": "Article",
+      "updated_date": "2022-11-01T06:17:25-04:00",
+      "created_date": "2022-10-31T12:16:57-04:00",
+      "published_date": "2022-10-31T12:16:57-04:00",
+      "material_type_facet": "",
+      "kicker": "",
+      "des_facet": [
+        "Floods",
+        "Global Warming",
+        "Infrastructure (Public Works)",
+        "Disasters and Emergencies",
+        "Water",
+        "Rivers"
+      ],
+      "org_facet": [
+        "Federal Emergency Management Agency",
+        "National Center for Atmospheric Research",
+        "National Oceanic and Atmospheric Administration",
+        "Nature Sustainability (Journal)"
+      ],
+      "per_facet": ["Garcetti, Eric M"],
+      "geo_facet": ["Los Angeles (Calif)", "California"],
+      "multimedia": [
+        {
+          "url": "https://static01.nyt.com/images/2022/10/31/science/31cli-californiaflood-01/merlin_150112287_06e974e6-96ce-4083-adc3-6a8ddddbaf91-superJumbo.jpg",
+          "format": "Super Jumbo",
+          "height": 1279,
+          "width": 1918,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Water raced down the Los Angeles River in February 2019 as a powerful storm drenched California.",
+          "copyright": "John Antczak/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/10/31/science/31cli-californiaflood-01/merlin_150112287_06e974e6-96ce-4083-adc3-6a8ddddbaf91-threeByTwoSmallAt2X.jpg",
+          "format": "threeByTwoSmallAt2X",
+          "height": 400,
+          "width": 600,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Water raced down the Los Angeles River in February 2019 as a powerful storm drenched California.",
+          "copyright": "John Antczak/Associated Press"
+        },
+        {
+          "url": "https://static01.nyt.com/images/2022/10/31/science/31cli-californiaflood-01/31cli-californiaflood-01-thumbLarge.jpg",
+          "format": "Large Thumbnail",
+          "height": 150,
+          "width": 150,
+          "type": "image",
+          "subtype": "photo",
+          "caption": "Water raced down the Los Angeles River in February 2019 as a powerful storm drenched California.",
+          "copyright": "John Antczak/Associated Press"
+        }
+      ],
+      "short_url": "https://nyti.ms/3SLTZWd"
     }
   ]
 }
