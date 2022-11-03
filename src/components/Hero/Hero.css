@@ -1,0 +1,123 @@
+.hero {
+  border-bottom: 3px  black dotted;
+}
+
+.hero-img {
+  padding-top: 0.5%;
+  width: 99%;
+  height: 85%;
+}
+
+.top-stories {
+  font-size: xx-large;
+  letter-spacing: 0.1em;
+  margin-top: 0.4%;
+  margin-bottom: 0%;
+}
+
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide.active {
+  border-radius: 3px;
+  color: #262626;
+  opacity: 1;
+  transition: transform 0.2s ease-in-out;
+  transform: (2);
+  background-color: white;
+  box-shadow: rgba(240, 238, 238, 0.963) 0px 0.0625em 0.0625em,
+    rgba(255, 255, 255, 0.458) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.226) 0px 0px 0px 1px inset;
+  width: 55%;
+  height: 30.5em;
+}
+
+.slide.active:hover {
+  transform: scale(1.1);
+}
+
+.slide-btn {
+  position: absolute;
+  top: 40%;
+  font-size: 3rem;
+  z-index: 10;
+  color: black;
+  cursor: pointer;
+  user-select: none;
+  background: none;
+  border: none;
+}
+
+.slide-btn:hover {
+  color: white;
+}
+
+/* ipad and laptops  */
+@media (min-width: 768px) {
+  .slide.active {
+    border-radius: 3px;
+    color: #262626;
+    opacity: 1;
+    transition: transform 0.2s ease-in-out;
+    transform: (2);
+    background-color: white;
+    box-shadow: rgba(240, 238, 238, 0.963) 0px 0.0625em 0.0625em,
+      rgba(255, 255, 255, 0.458) 0px 0.125em 0.5em,
+      rgba(255, 255, 255, 0.226) 0px 0px 0px 1px inset;
+    width: 55%;
+    height: 30em;
+    margin-bottom: 1%;
+  }
+  .left {
+    position: absolute;
+    left: 5%;
+  }
+  .right {
+    position: absolute;
+    right: 5%;
+  }
+}
+
+/* mobile */
+@media (min-width: 320px) and (max-width: 989px) {
+  .slide.active {
+    border-radius: 3px;
+    color: #262626;
+    opacity: 1;
+    transition: transform 0.2s ease-in-out;
+    transform: (2);
+    background-color: white;
+    box-shadow: rgba(240, 238, 238, 0.963) 0px 0.0625em 0.0625em,
+      rgba(255, 255, 255, 0.458) 0px 0.125em 0.5em,
+      rgba(255, 255, 255, 0.226) 0px 0px 0px 1px inset;
+    width: 70%;
+    height: 25em;
+        margin-bottom: 5%;
+  }
+
+  .hero-img {
+    padding-top: 0.5%;
+    width: 99%;
+    height: 73%;
+  }
+
+  .right {
+    position: absolute;
+    right: 0.5%;
+  }
+  .left {
+    position: absolute;
+    left: 0.5%;
+  }
+
+  .top-stories {
+  font-size: x-large;
+  letter-spacing: 0.1em;
+  margin-top: 0.4%;
+  margin-bottom: 2%;
+}
+}

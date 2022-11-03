@@ -3,20 +3,8 @@ import { Link } from "react-router-dom";
 import "./DetailCard.css";
 
 const DetailCard = ({ article }) => {
-  console.log(article);
-  
-  const {
-    title,
-    abstract,
-    created_date,
-    published_date,
-    updated_date,
-    byline,
-    short_url,
-    multimedia,
-    des_facet,
-    geo_facet,
-  } = article;
+  const { title, abstract, dates, byline, url, image, description, geography } =
+    article;
 
   return (
     <div className="detail-card">
@@ -28,28 +16,24 @@ const DetailCard = ({ article }) => {
       <h3 className="by">{byline}</h3>
       <p className="abstract">
         {abstract}{" "}
-        <a href={short_url} target="_blank" rel="noreferrer">
+        <a href={url} target="_blank" rel="noreferrer">
           more...{" "}
         </a>
       </p>
-      <img
-        className="detail-image"
-        src={multimedia[0].url}
-        alt={multimedia[0].copyright}
-      />
+      <img className="detail-image" src={image.url} alt={image.copyright} />
       <div className="facet">
-        <p>{des_facet.join(", ")}</p>
-        <p>{geo_facet.join(", ")}</p>
+        <p>{description}</p>
+        <p>{geography}</p>
       </div>
       <div className="dates">
         <p>
           DATES:
           <br></br>
-          Created: {new Date(created_date).toDateString()}
+          Created: {dates.created}
           <br></br>
-          Published: {new Date(published_date).toDateString()}
+          Published: {dates.published}
           <br></br>
-          Updated: {new Date(updated_date).toDateString()}
+          Updated: {dates.updated}
         </p>
       </div>
     </div>
